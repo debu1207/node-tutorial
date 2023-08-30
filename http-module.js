@@ -7,10 +7,6 @@ const server = http.createServer((req, res) => {
     if(req.url === '/about') {
         res.end('ABOUT');
     }
-
-    res.end(`
-<h2>PAGE NOT FOUND!</h2>
-<a href="/">Go back</a>`)
 })
 
 server.listen(port, ()=> {
