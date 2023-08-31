@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 // set ejs as the templating engine
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
@@ -11,7 +12,7 @@ app.get('/', (req, res) => {
         hobbies: ['Playing Guitar', 'Reading books', 'Singing']
     }
 
-    res.render('home', {data: data});
+    res.render('test');
 })
 
 app.listen(port, ()=> {
