@@ -6,11 +6,12 @@ const port = 3000;
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    // the render methods takes the name of the html page
-    // to be rendered as input 
-    // this page should be in the views folder in the root directory.
+    let data = {
+        name: 'Trevor',
+        hobbies: ['Playing Guitar', 'Reading books', 'Singing']
+    }
 
-    res.render('home');
+    res.render('home', {data: data});
 })
 
 app.listen(port, ()=> {

@@ -14,5 +14,13 @@
 </head>
 <body>
     <h2>Home Page</h2>
+    <p>Welcome <%=data.name%>, in our web page</p>
+    <ol>
+        <% data.hobbies.forEach((item) => {%>
+            <li>
+                <%=item%>
+            </li>
+        <%});%>
+    </ol>
 </body>
 </html>
