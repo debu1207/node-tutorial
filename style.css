@@ -1,0 +1,13 @@
+#struct {
+    background-color: dodgerblue;
+    width: 260px;
+    text-align: center;
+    border-radius: 5px;
+}
+h2 {
+    color: rgb(13, 89, 164);
+    font-size: 2em;
+}
+h4 {
+    padding: 10px;
+}

@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Routing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Basic Routing</h2>
+    <p><b>Routing</b> refers to determining how an application responds to a client request to a particliar endpoint, which is a URL (or path) and a specific HTTP request methods (GET, POST, and so on.)</p>
+
+    <p>Each route can have one or more handler functions, which are executed when the route is matched.</p>
+
+    <p>Route definition takes the following structure:</p>
+    <div id="struct"><h4>app.METHOD(PATH, HANDLER)</h4></div>
+    <p>Where:</p>
+    
+    <li><b>app</b> is an instance of expess</li>
+    <li><b>METHOD</b> is an HTTP request method, in lowercase.</li>
+    <li><b>PATH</b> is an path on the server.</li>
+    <li><b>HANDLER</b> is the function executed when the route is matched.</li>
+</body>
+</html>
