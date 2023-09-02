@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP request methods</title>
+    <style>
+        tr {
+            background-color: dodgerblue;
+        }
+       
+
+        th, td {
+            margin: 50px;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>HTTP request methods</h2>
+    <p>HTTP defines a set of request methods to indicate the desired action to be performed for a given resource.</p>
+
+    <p>Although they can also be nouns, these request methods are sometimes refereed to as HTTP verbs. Each of them implements a different semantic, but some common features are shared by a group of them: e.g. a request method can be safe, idempotent, or cacheable.</p>
+
+    <table>
+        <tr>
+          <th>GET</th>
+          <td>The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.</td>
+        </tr>
+        <tr>
+          <th>HEAD</th>
+          <td>The HEAD method asks for a reponse identical to a GET request, but without the response body.</td>
+        </tr>
+        <tr>
+          <th>POST</th>
+          <td>The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.</td>
+        </tr>
+        <tr>
+            <th>PUT</th>
+            <td>The PUT method replaces all current representations of the target resource with the request payload.</td>
+        </tr>
+        <tr>
+            <th>DELETE</th>
+            <td>The DELETE method deletes the specified resource.</td>
+        </tr>
+        <tr>
+            <th>CONNECT</th>
+            <td>The CONNECT method establishes a tunnel to the server identified by the target resource.</td>
+        </tr>
+        
+      </table>
+</body>
+</html>
